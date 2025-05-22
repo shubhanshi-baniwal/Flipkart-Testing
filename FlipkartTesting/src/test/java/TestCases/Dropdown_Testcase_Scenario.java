@@ -17,7 +17,7 @@ public class Dropdown_Testcase_Scenario {
     @BeforeClass
     public void setUp()
     {
-        WebDriver driver = utility.launchURL();
+        WebDriver driver = utility.isHeadless();
         mainpage = new Main_Page(driver);
        // loginPage = new Login_Page(driver);
     }

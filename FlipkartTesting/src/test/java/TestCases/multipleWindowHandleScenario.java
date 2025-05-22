@@ -21,7 +21,7 @@ public class multipleWindowHandleScenario {
     String testFolder;
     @BeforeClass
     public void setUp() throws IOException {
-        WebDriver driver = utility.launchURL();
+        WebDriver driver = utility.isHeadless();
         loginPage = new Login_Page(driver);
         mainPage = new Main_Page(driver);
         headsetpage = new BluetoothHeadphones_Page(driver);

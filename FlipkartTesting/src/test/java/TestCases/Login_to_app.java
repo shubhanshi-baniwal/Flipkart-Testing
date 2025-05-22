@@ -18,7 +18,7 @@ public class Login_to_app {
     @BeforeClass
     public void setUp()
     {
-        WebDriver driver = utility.launchURL();
+        WebDriver driver = utility.isHeadless();
         loginPage = new Login_Page(driver);
         mainPage = new Main_Page(driver);
     }
